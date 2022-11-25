@@ -35,7 +35,7 @@ RUN apt-get install -y \
 RUN mkdir -p ${OS2D_ROOT} && chmod -R a+rwx ${OS2D_ROOT}
 WORKDIR ${OS2D_ROOT}
 
-RUN git clone https://github.com/aosokin/os2d.git ${OS2D_ROOT}
+RUN git clone https://github.com/Diogo364/os2d.git ${OS2D_ROOT}
 
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
